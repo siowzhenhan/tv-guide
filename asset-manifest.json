@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tv-guide/static/css/main.b283cf48.chunk.css",
-    "main.js": "/tv-guide/static/js/main.a89b6ae6.chunk.js",
-    "main.js.map": "/tv-guide/static/js/main.a89b6ae6.chunk.js.map",
+    "main.js": "/tv-guide/static/js/main.c6ed5b1f.chunk.js",
+    "main.js.map": "/tv-guide/static/js/main.c6ed5b1f.chunk.js.map",
     "runtime-main.js": "/tv-guide/static/js/runtime-main.50700bb8.js",
     "runtime-main.js.map": "/tv-guide/static/js/runtime-main.50700bb8.js.map",
     "static/css/2.5fef9bcb.chunk.css": "/tv-guide/static/css/2.5fef9bcb.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.5fef9bcb.chunk.css",
     "static/js/2.c3b6919f.chunk.js",
     "static/css/main.b283cf48.chunk.css",
-    "static/js/main.a89b6ae6.chunk.js"
+    "static/js/main.c6ed5b1f.chunk.js"
   ]
 }
