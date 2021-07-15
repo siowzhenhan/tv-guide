@@ -12,7 +12,7 @@ import DetailsPage from './pages/Details'
 function App() {
   return (
     <div className='App'>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Route exact path='/' component={Home} />
         <Route path='/details/:slug' component={DetailsPage} />
       </Router>

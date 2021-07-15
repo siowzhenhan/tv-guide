@@ -39,11 +39,41 @@ const Home = () => {
     setFiltered(filter)
   }
 
+  const handleRefinedResults = keyword => {
+    const refined = data.filter(d => {
+      const refineByCategory = d.category === keyword
+      const refineByLanguage = d.language === keyword
+      const refineByResolution = d.isHd.toString() === keyword
+
+      return refineByCategory || refineByLanguage || refineByResolution
+    })
+    setFiltered(refined)
+  }
+
+  let allLanguage = []
+  for (let i = 0; i < data.length; i++) {
+    const current = data[i]
+    if (allLanguage.indexOf(current.language) === -1) {
+      allLanguage.push(current.language)
+    }
+  }
+
+  let allCategories = []
+  for (let i = 0; i < data.length; i++) {
+    const current = data[i]
+    if (allCategories.indexOf(current.category) === -1) {
+      allCategories.push(current.category)
+    }
+  }
+
   return (
     <div className='container'>
-      <h1>Channel List</h1>
+      <h1 style={{ marginLeft: 25 }}>Channel List</h1>
 
       <ChannelList
+        handleRefineProps={handleRefinedResults}
+        allCategoriesProps={allCategories}
+        allLanguagesProps={allLanguage}
         handleNameSearchProps={handleNameSearch}
         data={filtered.length ? filtered : data}
       />

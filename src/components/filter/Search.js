@@ -11,7 +11,6 @@ const Search = ({ handleNameSearchProps }) => {
 
   return (
     <Input
-      style={{ marginBottom: 10 }}
       className='search-input'
       type='text'
       placeholder='Search Channels'

@@ -45,10 +45,11 @@ const ChannelDetails = () => {
   const currentTime = new Date()
 
   const isOnNow = obj => {
-    const diff = currentTime - new Date(obj.datetime)
+    const formattedDateTime = new Date(obj.datetime.replace(' ', 'T'))
+    const diff = currentTime - formattedDateTime
     if (
       diff / 60000 < toMinutes(obj.duration) &&
-      new Date(obj.datetime) < currentTime
+      formattedDateTime < currentTime
     ) {
       return true
     }
@@ -57,7 +58,8 @@ const ChannelDetails = () => {
 
   const allFilter = allSchedules.map(arr => {
     const filter = arr.filter(obj => {
-      const diff = currentTime - new Date(obj.datetime)
+      const formattedDateTime = new Date(obj.datetime.replace(' ', 'T'))
+      const diff = currentTime - formattedDateTime
       return diff / 60000 < toMinutes(obj.duration)
     })
     return filter
@@ -67,7 +69,7 @@ const ChannelDetails = () => {
     <div className='container'>
       <h1>Channel Details Page</h1>
       <Breadcrumb style={{ marginBottom: 30 }}>
-        <Breadcrumb.Item href='/'>Content</Breadcrumb.Item>
+        <Breadcrumb.Item href={process.env.PUBLIC_URL}>Content</Breadcrumb.Item>
         <Breadcrumb.Item>{details.title}</Breadcrumb.Item>
       </Breadcrumb>
 
