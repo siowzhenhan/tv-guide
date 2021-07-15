@@ -46,6 +46,30 @@
   margin: 0 25px;
 }
 
+.ant-input:focus {
+  border-color: rgb(230, 0, 125);
+  outline: none;
+}
+
+.ant-input:hover {
+  border-color: rgb(230, 0, 125);
+  outline: none;
+}
+
+.ant-btn:hover {
+  border-color: rgb(230, 0, 125);
+  color: rgb(230, 0, 125);
+}
+
+.ant-select-focused .ant-select-selector,
+.ant-select-selector:hover,
+.ant-select-selector:focus,
+.ant-select-selector:active,
+.ant-select-open .ant-select-selector {
+  border-color: rgb(230, 0, 125) !important;
+  box-shadow: none !important;
+}
+
 .refine-button {
   float: right;
   margin-left: 25px;
@@ -56,6 +80,7 @@
   float: left;
   margin-right: 25px;
   border-radius: 15px;
+  width: 13em;
 }
 
 ul {

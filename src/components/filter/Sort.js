@@ -102,7 +102,7 @@ const Sorter = ({
 
       <Select
         className='sort-select'
-        style={{ width: '13em' }}
+        // style={{ width: '13em' }}
         placeholder='Sort channels'
         onChange={handleChange}
       >
