@@ -68,7 +68,7 @@ const Home = () => {
 
   return (
     <div className='container'>
-      <h1 style={{ marginLeft: 25 }}>Channel List</h1>
+      <h1>Channel List</h1>
 
       <ChannelList
         handleRefineProps={handleRefinedResults}

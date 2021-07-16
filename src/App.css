@@ -13,14 +13,13 @@
 
 .wrapper-grid {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   flex-wrap: wrap;
   width: 100%;
-  /* border: 1px solid red; */
 }
 
 .channel-card {
-  width: 30%;
+  width: 32.1%;
   margin: 10px;
   border-radius: 5px;
   text-align: left;
@@ -34,7 +33,6 @@
   align-items: center;
   width: 100%;
   margin-bottom: 10px;
-  /* border: 1px solid red; */
 }
 
 .search-input {
@@ -43,7 +41,6 @@
   border-radius: 15px;
   padding-left: 10px;
   outline: none;
-  margin: 0 25px;
 }
 
 .ant-input:focus {
@@ -72,13 +69,11 @@
 
 .refine-button {
   float: right;
-  margin-left: 25px;
   border-radius: 10px;
 }
 
 .sort-select {
   float: left;
-  margin-right: 25px;
   border-radius: 15px;
   width: 13em;
 }
@@ -129,23 +124,13 @@ ul li span {
   margin-bottom: 10px;
 }
 
-.favourites-outer-container {
-  margin: 0 25px;
-}
-
-/* @media (max-width: 850px) {
-  .container {
-    margin: 20px;
-  }
-
-  .channel-card {
-    width: 40%;
-  }
-} */
-
 @media (max-width: 800px) {
   .container {
     margin: 20px;
+  }
+
+  .wrapper-grid {
+    justify-content: center;
   }
 
   .channel-card {
